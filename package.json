@@ -1,0 +1,19 @@
+{
+  "name": "filter_app",
+  "version": "1.0.0",
+  "description": "This web app provides different types of filter and effects and allow you to download your filtered image.<br />\r Effects are working but filters are still not completed.",
+  "main": "script.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashant280920/Image_Filter_WebApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashant280920/Image_Filter_WebApp/issues"
+  },
+  "homepage": "https://github.com/prashant280920/Image_Filter_WebApp#readme"
+}

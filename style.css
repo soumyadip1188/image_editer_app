@@ -1,0 +1,14 @@
+#canvas {
+	margin:auto;
+	background:#ececec;
+	width:100%;
+}
+.margin{
+	margin-bottom: 10px !important;
+}
+.emargin{
+	margin-bottom: 5px !important;
+}
+.tmargin{
+	margin-top:-15px !important;
+}

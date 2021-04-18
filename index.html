@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Filter Web App</title>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-info mb-5">
+		<div class="container">
+			<a  class="navbar-brand">Online Image Filter</a>
+		</div>
+	</nav>	
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 m-auto">
+				<div class="custom-file mb-3">
+					<input type="file" class="custom-file-input " id="upload-file">
+					<label for="upload-file" class="custom-file-label">Choose Image</label>
+				</div>	
+				<canvas id="canvas"></canvas>
+				
+
+				<h4 class="text-center my-3">Filters</h4>
+
+				
+
+				<div class="row text-center my-4">
+					<div class="col-md-3 margin">
+						<div class="btn-group btn-group-sm">
+							<button class=" brightness-remove btn btn-info">-</button>
+							<button class="btn btn-secondary btn-disabled" disabled>Brightness</button>
+							<button class=" brightness-add btn btn-info" >+</button>
+						</div>
+						<div class="slidecontainer">
+						  <input type="range" min="0" max="200" value="100" class="custom-range " id="brightness">
+						</div>
+					</div>
+					<div class="col-md-3 margin">
+						<div class="btn-group btn-group-sm">
+							<button class=" contrast-remove btn btn-info">-</button>
+							<button class="btn btn-secondary" disabled> Contrast </button>
+							<button class=" contrast-add btn btn-info">+</button>
+						</div>
+						<div class="slidecontainer">
+						  <input type="range" min="0" max="200" value="100" class="custom-range" id="contrast">
+						</div>
+					</div>
+					<div class="col-md-3 margin">
+						<div class="btn-group btn-group-sm">
+							<button class=" saturation-remove btn btn-info">-</button>
+							<button class="btn btn-secondary" disabled>Saturation</button>
+							<button class=" saturation-add btn btn-info">+</button>
+						</div>
+						<div class="slidecontainer">
+						  <input type="range" min="0" max="200" value="100" class="custom-range" id="saturation">
+						</div>
+					</div>
+					<div class="col-md-3 margin">
+						<div class="btn-group btn-group-sm">
+							<button class="grayscale-remove btn btn-info">-</button>
+							<button class="btn btn-secondary" disabled> GrayScale </button>
+							<button class="grayscale-add btn btn-info">+</button>
+						</div>
+						<div class="slidecontainer">
+						  <input type="range" min="0" max="100" value="0" class="custom-range" id="grayscale">
+						</div>
+					</div>
+				</div>
+					<!---End Row--->
+
+				<h4 class="text-center my-3">Effects</h4>
+
+				<!---------Effects OPtions------------>
+
+				<div class="row mb-3 ">
+					<div class="col-md-3">
+						<button class="filter-btn xpro2-add btn btn-dark btn-block emargin">X-PRO 2</button>
+					</div>
+					<div class="col-md-3">
+						<button class="filter-btn toaster-add btn btn-dark btn-block emargin">Toaster</button>
+					</div>
+					<div class="col-md-3">
+						<button class="filter-btn sutro-add btn btn-dark btn-block emargin">Sutro</button>
+					</div>
+					<div class="col-md-3">
+						<button class="filter-btn mayfair-add btn btn-dark btn-block emargin">Mayfair</button>
+					</div>
+				</div>
+					<!----EndRow---->
+				<div class="row mb-3 tmargin">
+					<div class="col-md-3">
+						<button class="filter-btn kelvin-add btn btn-dark btn-block emargin">Kelvin</button>
+					</div>
+					<div class="col-md-3">
+						<button class="filter-btn inkwell-add btn btn-dark btn-block emargin">Inkwell</button>
+					</div>
+					<div class="col-md-3">
+						<button class="filter-btn brannan-add btn btn-dark btn-block emargin">Brannan</button>
+					</div>
+					<div class="col-md-3">
+						<button class="filter-btn amaro-add btn btn-dark btn-block emargin">Amaro</button>
+					</div>
+				</div>
+					<!----End Row---->
+
+
+				<!------Download And Reset Buttons----->
+				<div class="row my-5">
+					<div class="col-md-6">
+						<button id="download-btn" class="btn btn-primary btn-block emargin">Download Image</button>
+					</div>
+					<div class="col-md-6">
+						<button id="revert-btn" class="btn btn-danger btn-block emargin">Remove Filter</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
